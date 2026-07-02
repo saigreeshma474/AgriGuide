@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 120 20% 97%;
+    --foreground: 140 80% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 140 80% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 140 80% 15%;
+
+    --primary: 135 65% 35%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 40 40% 88%;
+    --secondary-foreground: 140 80% 15%;
+
+    --muted: 120 15% 92%;
+    --muted-foreground: 140 20% 40%;
+
+    --accent: 135 55% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 120 20% 85%;
+    --input: 120 20% 90%;
+    --ring: 135 65% 35%;
+
+    --radius: 0.75rem;
+    
+    /* Agricultural theme colors */
+    --agricultural-green: 135 65% 35%;
+    --earth-brown: 30 35% 50%;
+    --sky-blue: 200 80% 60%;
+    --sun-yellow: 45 95% 60%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(135 65% 35%), hsl(135 55% 45%));
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%), hsl(120 20% 98%));
+    
+    /* Shadows */
+    --shadow-card: 0 2px 8px hsl(135 65% 35% / 0.1);
+    --shadow-button: 0 4px 12px hsl(135 65% 35% / 0.15);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 140 30% 10%;
+    --foreground: 120 20% 95%;
+
+    --card: 140 25% 12%;
+    --card-foreground: 120 20% 95%;
+
+    --popover: 140 25% 12%;
+    --popover-foreground: 120 20% 95%;
+
+    --primary: 135 55% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 140 20% 20%;
+    --secondary-foreground: 120 20% 95%;
+
+    --muted: 140 20% 20%;
+    --muted-foreground: 120 15% 65%;
+
+    --accent: 135 55% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 140 20% 20%;
+    --input: 140 20% 20%;
+    --ring: 135 55% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
